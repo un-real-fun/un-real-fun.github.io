@@ -161,7 +161,7 @@ $(window).scroll(showconceptbg1);
 // open Fact
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "50%";
+    document.getElementById("mySidenav").style.width = "80%";
     document.getElementById("mainNav").style.opacity = "0";
     document.getElementById("sup_empty").style.width = "0";
     setTimeout(function(){document.getElementById("mainNav").style.display = "none";},500);
@@ -170,6 +170,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("mainNav").style.opacity = "1";
-    document.getElementById("sup_empty").style.width = "50%";
+    document.getElementById("sup_empty").style.width = "30%";
     setTimeout(function(){document.getElementById("mainNav").style.display = "block";},400);
 }

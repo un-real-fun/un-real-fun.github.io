@@ -1,7 +1,7 @@
 #mainNav {
   position: fixed;
   z-index: 1200;
-  width: 45%;
+  width: 35%;
   height: 100%;
   opacity: 1;
   transition: 0.5s;
@@ -9,7 +9,7 @@
   overflow: scroll;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -17,24 +17,24 @@
 #mainNav .navbar-brand {
   font-weight: 700;
   color: #000;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
 }
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #65cea0;
+  color: #dad12a;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: 2rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #212529;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #65cea0;
+  color: #DAD12A;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #65cea0 !important;
+  color: #DAD12A !important;
   background-color: transparent;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
@@ -57,11 +57,11 @@
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: #65cea0;
+    color: #DAD12A;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #54a380;
+    color: #c15e53;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
@@ -75,7 +75,7 @@
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #54a380;
+    color: #c15e53;
   }
 }
 
@@ -92,15 +92,15 @@
 }
 
 .brand_name {
-  font-size: 0.8em !important;
+  font-size: 1em !important;
   line-height: 1em !important;
-  width: 45%;
-  color: #fff;
+  width: 35%;
+  color: #212529;
   z-index: 2500;
 }
 
 .text-primary {
-  color: #65cea0 !important;
+  color: #DAD12A !important;
 }
 
 .btn {
@@ -108,7 +108,7 @@
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
 }
 
 .btn-xl {
@@ -116,12 +116,12 @@
 }
 
 .btn-primary {
-  background-color: #65cea0;
-  border-color: #65cea0;
+  background-color: #DAD12A;
+  border-color: #DAD12A;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #52c894 !important;
+  background-color: #c8bf23 !important;
 }
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
@@ -203,7 +203,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(101, 206, 160, 0.9);
+  background: rgba(218, 209, 42, 0.9);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -218,7 +218,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
 }
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
@@ -247,7 +247,7 @@ header.masthead p {
 
 .project-step_name {
   font-size: 24px;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
 }
 
 .project-step_desc {
@@ -256,26 +256,38 @@ header.masthead p {
 
 .step-num {
   font-size: 95px;
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
   position: relative;
   top: -30px;
   font-weight: bold;
 }
 
 html, body {
-  background-color: #000647;
+  background-color: #B2473B;
   height: 100% !important;
   width: 100%;
 }
 
 body {
-  font-family: "Raleway", Courier;
+  font-family: "Crimson Text", Courier;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+body::-webkit-scrollbar-thumb {
+  background: #ed8074;
 }
 
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #65cea0;
+  border-color: #DAD12A;
 }
 
 hr.light {
@@ -283,13 +295,13 @@ hr.light {
 }
 
 a {
-  color: #65cea0;
+  color: #DAD12A;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 a:hover {
-  color: #65cea0;
+  color: #dad12a;
 }
 
 h1,
@@ -298,11 +310,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
 }
 
 .bg-primary {
-  background-color: #65cea0 !important;
+  background-color: #DAD12A !important;
 }
 
 .bg-dark {
@@ -388,10 +400,23 @@ img::-moz-selection {
   z-index: 2500;
   top: 0;
   right: 0;
-  background-color: #246849;
+  background-color: #fff;
   transition: 0.5s;
   overflow-x: hidden;
   padding-top: 60px;
+  border-left: 1px solid #B2473B;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 3px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+.sidenav::-webkit-scrollbar-thumb {
+  background: #DAD12A;
 }
 
 .sidenav a {
@@ -409,11 +434,12 @@ img::-moz-selection {
 
 .sidenav .closebtn {
   position: absolute;
-  top: -40px;
-  right: 25px;
-  font-size: 96px;
+  top: 0px;
+  left: 0px;
+  font-size: 36px;
   margin-left: 50px;
   vertical-align: text-top;
+  color: #000;
 }
 
 @media screen and (max-height: 450px) {
@@ -426,10 +452,10 @@ img::-moz-selection {
   }
 }
 span.fact {
-  color: #65cea0;
+  color: #DAD12A;
 }
 
 #sup_empty {
-  width: 50%;
+  width: 30%;
   transition: 0.5s;
 }

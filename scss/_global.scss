@@ -10,6 +10,15 @@ body {
   @include serif-font;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+body::-webkit-scrollbar-thumb {
+  background: $brand-03;
+}
+
 hr {
   max-width: 50px;
   border-width: 3px;
@@ -130,10 +139,20 @@ img::-moz-selection {
     z-index: 2500;
     top: 0;
     right: 0;
-    background-color: $brand-03;
+    background-color: $white;
     transition: 0.5s;
     overflow-x: hidden;
     padding-top: 60px;
+    border-left: 1px solid $inverse-01;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 3px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+.sidenav::-webkit-scrollbar-thumb {
+  background: $brand-01;
 }
 
 .sidenav a {
@@ -151,11 +170,12 @@ img::-moz-selection {
 
 .sidenav .closebtn {
     position: absolute;
-    top: -40px;
-    right: 25px;
-    font-size: 96px;
+    top: 0px;
+    left: 0px;
+    font-size: 36px;
     margin-left: 50px;
     vertical-align: text-top;
+    color: $black;
 }
 
 @media screen and (max-height: 450px) {
@@ -168,6 +188,6 @@ span.fact{
 }
 
 #sup_empty {
-  width: 50%;
+  width: 30%;
   transition: 0.5s;
 }

@@ -2,7 +2,7 @@
 #mainNav {
   position: fixed;
   z-index: 1200;
-  width: 45%;
+  width: 35%;
   height: 100%;
   opacity: 1;
   transition: 0.5s;
@@ -25,7 +25,7 @@
     > li.nav-item {
       > a.nav-link,
       > a.nav-link:focus {
-        font-size: 2rem;
+        font-size: 4.5rem;
         font-weight: 700;
         color: $gray-900;
         &:hover {
@@ -90,9 +90,9 @@
 }
 
 .brand_name{
-  font-size: 0.8em !important;
+  font-size: 1em !important;
   line-height: 1em !important;
-  width: 45%;
-  color: $white;
+  width: 35%;
+  color: $gray-900;
   z-index: 2500;
 }
