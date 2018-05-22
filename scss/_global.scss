@@ -1,0 +1,173 @@
+// Global styling for this template
+html, body {
+    background-color: $inverse-01;
+height: 100% !important;
+  width: 100%;}
+
+
+
+body {
+  @include serif-font;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: $brand-01;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+a {
+  color: $brand-01;
+  @include transition-all;
+  &:hover {
+    color: darken($brand-01, .1);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include sans-serif-font;
+}
+
+.bg-primary {
+  background-color: $brand-01 !important;
+}
+
+.bg-dark {
+  background-color: $support-01 !important;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.text-faded {
+  color: fade-out($white, .3);
+}
+
+.text-masthead{
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+
+section {
+  padding: 1rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+::selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+img::selection {
+  color: $white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: $white;
+  background: transparent;
+}
+
+
+#step2_red_gif, #step2_cur_gif, #step2_redesign, #step2_current {
+  -webkit-transition: height 1s ease-out; /* Safari */
+  transition: height 1s ease-out;
+}
+
+.StepActive{
+  color: $ui-05 !important;
+}
+
+
+#mobile {
+  display: none;
+}
+
+/*>900 overlay for mobile*/
+
+@media screen and (max-width: 899px), (min-aspect-ratio: 9/4), (max-height: 550px)  {
+
+  #main, #mainNav {
+    display: none;
+  }
+  #mobile {
+    display: block;
+    margin: 30px;
+    font-size: 30px;
+    line-height: 34px;
+    color: $white;
+  }
+}
+
+
+/*open fact*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2500;
+    top: 0;
+    right: 0;
+    background-color: $brand-03;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -40px;
+    right: 25px;
+    font-size: 96px;
+    margin-left: 50px;
+    vertical-align: text-top;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+span.fact{
+  color:$brand-01;
+}
+
+#sup_empty {
+  width: 50%;
+  transition: 0.5s;
+}

@@ -1,0 +1,435 @@
+#mainNav {
+  position: fixed;
+  z-index: 1200;
+  width: 45%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.5s;
+  background-color: #fff;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#mainNav .navbar-brand {
+  font-weight: 700;
+  color: #000;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #65cea0;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #65cea0;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #65cea0 !important;
+  background-color: transparent;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: #000;
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #65cea0;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #54a380;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #adb5bd;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #000;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #54a380;
+  }
+}
+
+#mainNav::-webkit-scrollbar {
+  width: 1px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+#mainNav::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.brand_name {
+  font-size: 0.8em !important;
+  line-height: 1em !important;
+  width: 45%;
+  color: #fff;
+  z-index: 2500;
+}
+
+.text-primary {
+  color: #65cea0 !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #65cea0;
+  border-color: #65cea0;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #52c894 !important;
+}
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+header.masthead {
+  padding-top: 12rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header2.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header.masthead h1 {
+  font-size: 2rem;
+}
+header.masthead p {
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+  header.masthead p {
+    font-size: 1.3rem;
+  }
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(101, 206, 160, 0.9);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+.portfolio-box:focus {
+  outline: none;
+}
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+.project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-name {
+  font-size: 18px;
+}
+
+.project-step_name {
+  font-size: 24px;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+.project-step_desc {
+  font-size: 14px;
+}
+
+.step-num {
+  font-size: 95px;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+  top: -30px;
+  font-weight: bold;
+}
+
+html, body {
+  background-color: #000647;
+  height: 100% !important;
+  width: 100%;
+}
+
+body {
+  font-family: "Raleway", Courier;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #65cea0;
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+a {
+  color: #65cea0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+a:hover {
+  color: #65cea0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+.bg-primary {
+  background-color: #65cea0 !important;
+}
+
+.bg-dark {
+  background-color: #ff5050 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-masthead {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+#step2_red_gif, #step2_cur_gif, #step2_redesign, #step2_current {
+  -webkit-transition: height 1s ease-out;
+  /* Safari */
+  transition: height 1s ease-out;
+}
+
+.StepActive {
+  color: #ffd3dd !important;
+}
+
+#mobile {
+  display: none;
+}
+
+/*>900 overlay for mobile*/
+@media screen and (max-width: 899px), (min-aspect-ratio: 9/4), (max-height: 550px) {
+  #main, #mainNav {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+    margin: 30px;
+    font-size: 30px;
+    line-height: 34px;
+    color: #fff;
+  }
+}
+/*open fact*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2500;
+  top: 0;
+  right: 0;
+  background-color: #246849;
+  transition: 0.5s;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -40px;
+  right: 25px;
+  font-size: 96px;
+  margin-left: 50px;
+  vertical-align: text-top;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+span.fact {
+  color: #65cea0;
+}
+
+#sup_empty {
+  width: 50%;
+  transition: 0.5s;
+}
