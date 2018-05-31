@@ -379,7 +379,7 @@ img::-moz-selection {
 }
 
 /*>900 overlay for mobile*/
-@media screen and (max-width: 2899px), (min-aspect-ratio: 9/4), (max-height: 550px) {
+@media screen and (max-width: 899px), (min-aspect-ratio: 9/4), (max-height: 550px) {
   #main, #mainNav, .brand_name, #mainNav::-webkit-scrollbar-thumb, .sidenav::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
     display: none;
   }
