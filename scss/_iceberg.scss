@@ -1,0 +1,211 @@
+.iceberg{
+  height: 100vh;
+  background: linear-gradient(90deg, $inverse-01 45%, #4C29A5 69%);
+  background: -moz-linear-gradient(90deg, $inverse-01 45%, #4C29A5 69%);
+  background: -webkit-linear-gradient(90deg, $inverse-01 45%, #4C29A5 69%);
+  background: -o-linear-gradient(90deg, $inverse-01 45%, #4C29A5 69%);
+  cursor: hand;
+  margin-left: -10vw;
+}
+.iceberg::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+// Box
+.box1 {
+  position:absolute;
+  width: 5vw;
+  height: 5vh;
+  left: 1000px;
+  top:200px;
+  background-color: yellow;
+  background-image: url('../img/24kgold.gif');
+}
+
+.box2{
+  position:absolute;
+  width: 10vw;
+  height: 10vh;
+  background-color: $brand-01;
+}
+
+.box3{
+  position:absolute;
+  width: 20vw;
+  height: 20vh;
+  background-color: $brand-02;
+}
+
+.boxtext1{
+  position:absolute;
+  width: 15vw;
+  height: 5vh;
+  padding: 1vh 0vh 1vh 2vh;
+  color:white;
+  font-size: 1.2em;
+  font-family: Comic Sans MS, arial;
+  opacity: 0.5;
+}
+
+.boxtext2{
+  position:absolute;
+  width: 15vw;
+  height: 5vh;
+  padding: 1vh 0vh 1vh 2vh;
+  color:purple;
+  font-size: 0.8em;
+  font-family: Comic Sans MS, arial;
+  opacity: 0.5;
+}
+
+// Grid
+.x1{
+  left: 0vw;
+}
+.x2{
+  left: 5vw;
+}
+.x3{
+  left: 10vw;
+}
+.x4{
+  left: 15vw;
+}
+.x5{
+  left: 20vw;
+}
+.x6{
+  left: 25vw;
+}
+.x7{
+  left: 30vw;
+}
+.x8{
+  left: 35vw;
+}
+.x9{
+  left: 40vw;
+}
+.x10{
+  left: 45vw;
+}
+.x11{
+  left: 50vw;
+}
+.x12{
+  left: 55vw;
+}
+.x13{
+  left: 60vw;
+}
+.x14{
+  left: 65vw;
+}
+.x15{
+  left: 70vw;
+}
+.x16{
+  left: 75vw;
+}
+.x17{
+  left: 80vw;
+}
+.x18{
+  left: 85vw;
+}
+.x19{
+  left: 90vw;
+}
+.x20{
+  left: 95vw;
+}
+
+.y1{
+  top: 0vh;
+}
+.y2{
+  top: 5vh;
+}
+.y3{
+  top: 10vh;
+}
+.y4{
+  top: 15vh;
+}
+.y5{
+  top: 20vh;
+}
+.y6{
+  top: 25vh;
+}
+.y7{
+  top: 30vh;
+}
+.y8{
+  top: 35vh;
+}
+.y9{
+  top: 40vh;
+}
+.y10{
+  top: 45vh;
+}
+.y11{
+  top: 50vh;
+}
+.y12{
+  top: 55vh;
+}
+.y13{
+  top: 60vh;
+}
+.y14{
+  top: 65vh;
+}
+.y15{
+  top: 70vh;
+}
+.y16{
+  top: 75vh;
+}
+.y17{
+  top: 80vh;
+}
+.y18{
+  top: 85vh;
+}
+.y19{
+  top: 90vh;
+}
+.y20{
+  top: 95vh;
+}
+.y21{
+  top: 100vh;
+}
+.y22{
+  top: 105vh;
+}
+.y23{
+  top: 110vh;
+}
+
+// cursor
+.washing:hover{
+  cursor: none;
+  background-image: url('../img/washing.gif');
+  background-size: contain;
+}
+
+.ie:hover{
+  cursor: none;
+  background-image: url('../img/ie4.gif');
+  background-size: contain;
+}
+
+.washing2:hover{
+  cursor: none;
+  background-image: url('../img/washing2.gif');
+  background-size: contain;
+}
