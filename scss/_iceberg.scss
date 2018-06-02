@@ -16,6 +16,7 @@
   @media screen and (max-width: 899px), (max-height: 550px)  {
      scale:0.3;
      padding-top: 30%;
+     margin-left: 0vw;
      background: linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
      background: -moz-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
      background: -webkit-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
@@ -23,6 +24,7 @@
      -ms-transform: scale(1, 0.3); /* IE 9 */
     -webkit-transform: scale(1, 0.3); /* Safari */
     transform: scale(1, 0.3);
+    overflow: hidden;
     }
 }
 

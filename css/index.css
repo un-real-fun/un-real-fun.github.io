@@ -121,7 +121,8 @@
 @media screen and (max-width: 899px), (max-height: 550px) {
   .brand_name {
     width: 100%;
-    margin-left: 40.5%;
+    text-align: center;
+    margin-left: 0%;
   }
 }
 
@@ -287,6 +288,12 @@ header.masthead p {
 @media screen and (max-width: 899px), (max-height: 550px) {
   .project-step_desc {
     padding-left: 0%;
+  }
+}
+
+@media screen and (max-width: 899px), (max-height: 550px) {
+  #main {
+    margin-top: -300px;
   }
 }
 
@@ -535,6 +542,7 @@ span.fact {
   .iceberg {
     scale: 0.3;
     padding-top: 30%;
+    margin-left: 0vw;
     background: linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
     background: -moz-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
     background: -webkit-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
@@ -544,6 +552,7 @@ span.fact {
     -webkit-transform: scale(1, 0.3);
     /* Safari */
     transform: scale(1, 0.3);
+    overflow: hidden;
   }
 }
 
