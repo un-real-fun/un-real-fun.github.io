@@ -88,6 +88,7 @@ h6 {
 }
 
 
+
 section {
   padding: 1rem 0;
 }
@@ -135,7 +136,7 @@ img::-moz-selection {
 
 /*>900 overlay for mobile*/
 
-@media screen and (max-width: 899px), (min-aspect-ratio: 9/4), (max-height: 550px)  {
+/*@media screen and (max-width: 899px), (min-aspect-ratio: 9/4), (max-height: 550px)  {
 
   #main, #mainNav,.iceberg {
     display: none;
@@ -147,7 +148,7 @@ img::-moz-selection {
     line-height: 34px;
     color: $white;
   }
-}
+}*/
 
 
 /*open fact*/

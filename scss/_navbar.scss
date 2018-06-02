@@ -6,7 +6,6 @@
   height: 100%;
   opacity: 1;
   transition: 0.5s;
-  background-color: $white;
   overflow: scroll;
   -ms-overflow-style: none;  // IE 10+
   overflow: -moz-scrollbars-none;  // Firefox
@@ -78,7 +77,20 @@
       }
     }
   }
-}
+  @media screen and (max-width: 899px), (max-height: 550px)  {
+      position: absolute;
+      z-index: 1200;
+      width: 100%;
+      height: 60%;
+      z-index: 15;
+      opacity: 1;
+      transition: 0.5s;
+      overflow: scroll;
+      -ms-overflow-style: none;  // IE 10+
+      overflow: -moz-scrollbars-none;  // Firefox
+    }
+  }
+
 
 #mainNav::-webkit-scrollbar {
   width: 1px;  /* remove scrollbar space */
@@ -92,7 +104,12 @@
 .brand_name{
   font-size: 1em !important;
   line-height: 1em !important;
+  margin-left: 4%;
   width: 35%;
-  color: $gray-900;
+  color: $black;
   z-index: 2500;
+  @media screen and (max-width: 899px), (max-height: 550px)  {
+      width: 100%;
+      margin-left: 3.5%;
+    }
 }

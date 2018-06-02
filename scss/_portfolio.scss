@@ -64,6 +64,10 @@
 }
 .project-step_desc {
   font-size: 14px;
+  padding-left: 7%;
+    @media screen and (max-width: 899px), (max-height: 550px)  {
+      padding-left: 0%;
+    }
 }
 
 .step-num {
