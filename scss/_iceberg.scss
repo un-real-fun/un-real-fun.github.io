@@ -1,4 +1,4 @@
-.iceberg, .iceberg_cover{
+.iceberg{
   height: 100vh;
   background: linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
   background: -moz-linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
@@ -12,18 +12,17 @@
   background: transparent;  /* optional: just make scrollbar invisible */
 }
 
-.iceberg_cover{
-  z-index: 990;
-  opacity: 0.7;
-  display: none;
-  @media screen and (max-width: 899px), (max-height: 550px)  {
-      display: block;
-    }
-}
-
 .iceberg{
   @media screen and (max-width: 899px), (max-height: 550px)  {
-     opacity: 0.4;
+     scale:0.3;
+     padding-top: 30%;
+     background: linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+     background: -moz-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+     background: -webkit-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+     background: -o-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+     -ms-transform: scale(1, 0.3); /* IE 9 */
+    -webkit-transform: scale(1, 0.3); /* Safari */
+    transform: scale(1, 0.3);
     }
 }
 

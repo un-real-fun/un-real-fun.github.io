@@ -1,7 +1,7 @@
 // Global styling for this template
 html, body {
-    background-color: $brand-02;
-height: 100% !important;
+  background-color: $brand-02;
+  height: 100% !important;
   width: 100%;
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
@@ -22,6 +22,15 @@ height: 100% !important;
                    linear-gradient($ui-01 1px, transparent 1px) -1px -1px / 20px,
                    linear-gradient(90deg, $ui-01 1px, transparent 1px) -1px -1px / 20px,
                    #269;
+                   @media screen and (max-width: 899px), (max-height: 550px)  {
+                     background: linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
+                     background: -moz-linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
+                     background: -webkit-linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
+                     background: -o-linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
+                     background-image: none;
+                     background-size: auto;
+                     background-position: auto;
+                     }
 }
 
 body {

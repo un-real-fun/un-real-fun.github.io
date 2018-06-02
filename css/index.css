@@ -27,6 +27,12 @@
   font-weight: 700;
   color: #212529;
 }
+@media screen and (max-width: 899px), (max-height: 550px) {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    font-size: 2.5rem;
+  }
+}
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
   color: #DAD12A;
@@ -115,7 +121,7 @@
 @media screen and (max-width: 899px), (max-height: 550px) {
   .brand_name {
     width: 100%;
-    margin-left: 3.5%;
+    margin-left: 40.5%;
   }
 }
 
@@ -302,6 +308,17 @@ html, body {
   background-image: -moz-linear-gradient(#B2473B 2px, transparent 2px), -moz-linear-gradient(0, #B2473B 2px, transparent 2px), -moz-linear-gradient(#ffe28c 1px, transparent 1px), -moz-linear-gradient(0, #ffe28c 1px, transparent 1px);
   background-image: linear-gradient(#B2473B 2px, transparent 2px), linear-gradient(90deg, #B2473B 2px, transparent 2px), linear-gradient(#ffe28c 1px, transparent 1px), linear-gradient(90deg, #ffe28c 1px, transparent 1px);
   -pie-background: linear-gradient(#B2473B 2px, transparent 2px) -2px -2px/100px, linear-gradient(90deg, #B2473B 2px, transparent 2px) -2px -2px/100px, linear-gradient(#ffe28c 1px, transparent 1px) -1px -1px/20px, linear-gradient(90deg, #ffe28c 1px, transparent 1px) -1px -1px/20px, #269;
+}
+@media screen and (max-width: 899px), (max-height: 550px) {
+  html, body {
+    background: linear-gradient(90deg, #B2473B 59%, #4C29A5 69%);
+    background: -moz-linear-gradient(90deg, #B2473B 59%, #4C29A5 69%);
+    background: -webkit-linear-gradient(90deg, #B2473B 59%, #4C29A5 69%);
+    background: -o-linear-gradient(90deg, #B2473B 59%, #4C29A5 69%);
+    background-image: none;
+    background-size: auto;
+    background-position: auto;
+  }
 }
 
 body {
@@ -497,7 +514,7 @@ span.fact {
   transition: 0.5s;
 }
 
-.iceberg, .iceberg_cover {
+.iceberg {
   height: 100vh;
   background: linear-gradient(90deg, #B2473B 59%, #4C29A5 69%);
   background: -moz-linear-gradient(90deg, #B2473B 59%, #4C29A5 69%);
@@ -514,20 +531,19 @@ span.fact {
   /* optional: just make scrollbar invisible */
 }
 
-.iceberg_cover {
-  z-index: 990;
-  opacity: 0.7;
-  display: none;
-}
-@media screen and (max-width: 899px), (max-height: 550px) {
-  .iceberg_cover {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 899px), (max-height: 550px) {
   .iceberg {
-    opacity: 0.4;
+    scale: 0.3;
+    padding-top: 30%;
+    background: linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+    background: -moz-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+    background: -webkit-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+    background: -o-linear-gradient(90deg, #4C29A5 59%, #FFF 69%);
+    -ms-transform: scale(1, 0.3);
+    /* IE 9 */
+    -webkit-transform: scale(1, 0.3);
+    /* Safari */
+    transform: scale(1, 0.3);
   }
 }
 
