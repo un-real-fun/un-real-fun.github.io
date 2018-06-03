@@ -113,7 +113,7 @@
 .brand_name {
   font-size: 1em !important;
   line-height: 1em !important;
-  margin-left: 3.4%;
+  margin-left: 3.6%;
   width: 35%;
   color: #000;
   z-index: 2500;
@@ -124,6 +124,15 @@
     text-align: center;
     margin-left: 0%;
   }
+}
+
+.org_logo {
+  position: relative;
+  width: 5vw;
+  margin-left: 3.6%;
+  margin-top: 30vh;
+  padding-right: 0.5vw;
+  mix-blend-mode: multiply;
 }
 
 .text-primary {
@@ -311,26 +320,9 @@ header.masthead p {
 }
 
 html, body {
-  background-color: #b5ffea;
   height: 100% !important;
   width: 100%;
-  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-  background-image: -webkit-linear-gradient(#c6293e 2px, transparent 2px), -webkit-linear-gradient(0, #c6293e 2px, transparent 2px), -webkit-linear-gradient(#ffe28c 1px, transparent 1px), -webkit-linear-gradient(0, #ffe28c 1px, transparent 1px);
-  background-image: -moz-linear-gradient(#c6293e 2px, transparent 2px), -moz-linear-gradient(0, #c6293e 2px, transparent 2px), -moz-linear-gradient(#ffe28c 1px, transparent 1px), -moz-linear-gradient(0, #ffe28c 1px, transparent 1px);
-  background-image: linear-gradient(#c6293e 2px, transparent 2px), linear-gradient(90deg, #c6293e 2px, transparent 2px), linear-gradient(#ffe28c 1px, transparent 1px), linear-gradient(90deg, #ffe28c 1px, transparent 1px);
-  -pie-background: linear-gradient(#c6293e 2px, transparent 2px) -2px -2px/100px, linear-gradient(90deg, #c6293e 2px, transparent 2px) -2px -2px/100px, linear-gradient(#ffe28c 1px, transparent 1px) -1px -1px/20px, linear-gradient(90deg, #ffe28c 1px, transparent 1px) -1px -1px/20px, #269;
-}
-@media screen and (max-width: 899px), (max-height: 550px) {
-  html, body {
-    background: linear-gradient(90deg, #c6293e 65%, #4C29A5 79%);
-    background: -moz-linear-gradient(90deg, #c6293e 65%, #4C29A5 79%);
-    background: -webkit-linear-gradient(90deg, #c6293e 65%, #4C29A5 79%);
-    background: -o-linear-gradient(90deg, #c6293e 65%, #4C29A5 79%);
-    background-image: none;
-    background-size: auto;
-    background-position: auto;
-  }
+  background-image: url("../img/bg.png");
 }
 
 body {

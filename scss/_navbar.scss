@@ -107,7 +107,7 @@
 .brand_name{
   font-size: 1em !important;
   line-height: 1em !important;
-  margin-left: 3.4%;
+  margin-left: 3.6%;
   width: 35%;
   color: $black;
   z-index: 2500;
@@ -116,4 +116,13 @@
       text-align: center;
       margin-left: 0%;
     }
+}
+
+.org_logo{
+  position: relative;
+  width: 5vw;
+  margin-left: 3.6%;
+  margin-top: 30vh;
+  padding-right: 0.5vw;
+  mix-blend-mode: multiply;
 }
