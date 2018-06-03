@@ -71,9 +71,10 @@
 }
 
 #main{
+  padding-left: 5vw;
   @media screen and (max-width: 899px), (max-height: 550px)  {
-    margin-top: -300px;
-  }  
+    margin-top: -35vh;
+  }
 }
 .step-num {
   font-size: 95px;

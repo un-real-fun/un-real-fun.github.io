@@ -23,10 +23,10 @@ html, body {
                    linear-gradient(90deg, $ui-01 1px, transparent 1px) -1px -1px / 20px,
                    #269;
                    @media screen and (max-width: 899px), (max-height: 550px)  {
-                     background: linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
-                     background: -moz-linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
-                     background: -webkit-linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
-                     background: -o-linear-gradient(90deg, $inverse-01 59%, #4C29A5 69%);
+                     background: linear-gradient(90deg, $inverse-01 65%, #4C29A5 79%);
+                     background: -moz-linear-gradient(90deg, $inverse-01 65%, #4C29A5 79%);
+                     background: -webkit-linear-gradient(90deg, $inverse-01 65%, #4C29A5 79%);
+                     background: -o-linear-gradient(90deg, $inverse-01 65%, #4C29A5 79%);
                      background-image: none;
                      background-size: auto;
                      background-position: auto;
@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 }
 /* optional: show position indicator in red */
 body::-webkit-scrollbar-thumb {
-  background: $brand-03;
+  background: $brand-02;
 }
 
 hr {
