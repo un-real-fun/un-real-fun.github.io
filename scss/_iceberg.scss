@@ -1,9 +1,9 @@
 .iceberg{
   height: 100vh;
-  background: linear-gradient(90deg, $inverse-01 59%, #34ff07 69%);
-  background: -moz-linear-gradient(90deg, $inverse-01 59%, #34ff07 69%);
-  background: -webkit-linear-gradient(90deg, $inverse-01 59%, #34ff07 69%);
-  background: -o-linear-gradient(90deg, $inverse-01 59%, #34ff07 69%);
+  background: linear-gradient(90deg, $support-01 59%, $brand-01 69%);
+  background: -moz-linear-gradient(90deg, $support-01 59%, $brand-01 69%);
+  background: -webkit-linear-gradient(90deg, $support-01 59%, $brand-01 69%);
+  background: -o-linear-gradient(90deg, $support-01 59%, $brand-01 69%);
   cursor: hand;
   margin-left: -10vw;
   @media screen and (max-width: 899px), (max-height: 550px)  {
@@ -56,7 +56,7 @@
 }
 
 .box2{
-  background-color: $brand-01;
+  background-color: $brand-02;
   width: 8vw;
   height: 10vh;
 }

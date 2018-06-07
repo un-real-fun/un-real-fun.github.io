@@ -19,7 +19,7 @@
   font-family: "Cormorant SC", "Helvetica Neue", Arial, sans-serif;
 }
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #ff537e;
+  color: #b4ffea;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -39,7 +39,7 @@
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #ff547e !important;
+  color: #000 !important;
   background-color: transparent;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
@@ -113,7 +113,7 @@
 .brand_name {
   font-size: 1em !important;
   line-height: 1em !important;
-  margin-left: 3.6%;
+  margin-left: 3vw;
   width: 35%;
   color: #000;
   z-index: 2500;
@@ -126,13 +126,50 @@
   }
 }
 
+.brand_sutitle {
+  position: relative;
+  padding-left: 1.3vw;
+  margin-top: 0.5vh;
+}
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .brand_sutitle {
+    position: relative;
+    width: 100vw;
+    margin-left: 0%;
+    right: 0px;
+    margin-top: 5vh;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0vh;
+  left: 0vw;
+  width: 35%;
+  padding-bottom: 2vh;
+  padding-left: 3vw;
+}
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .footer {
+    position: absolute;
+    width: 100vw;
+    margin-left: 0%;
+  }
+}
+
 .org_logo {
   position: relative;
   width: 5vw;
-  margin-left: 3.6%;
-  margin-top: 30vh;
+  margin-bottom: 2.5vh;
   padding-right: 0.5vw;
-  mix-blend-mode: multiply;
+}
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .org_logo {
+    position: relative;
+    width: 5vw;
+    margin-left: 0%;
+    margin-top: 5vh;
+  }
 }
 
 .text-primary {
@@ -376,7 +413,7 @@ h6 {
 }
 
 .bg-dark {
-  background-color: #ff5050 !important;
+  background-color: #e1e9f7 !important;
 }
 
 .bg-white {
@@ -462,7 +499,7 @@ img::-moz-selection {
   transition: 0.5s;
   overflow-x: hidden;
   padding-top: 60px;
-  border-left: 1px solid #c6293e;
+  border-left: 1px solid #76a8f7;
 }
 
 .sidenav::-webkit-scrollbar {
@@ -520,10 +557,10 @@ span.fact {
 
 .iceberg {
   height: 100vh;
-  background: linear-gradient(90deg, #c6293e 59%, #34ff07 69%);
-  background: -moz-linear-gradient(90deg, #c6293e 59%, #34ff07 69%);
-  background: -webkit-linear-gradient(90deg, #c6293e 59%, #34ff07 69%);
-  background: -o-linear-gradient(90deg, #c6293e 59%, #34ff07 69%);
+  background: linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
+  background: -moz-linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
+  background: -webkit-linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
+  background: -o-linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
   cursor: hand;
   margin-left: -10vw;
 }
@@ -580,7 +617,7 @@ span.fact {
 }
 
 .box2 {
-  background-color: #ff547e;
+  background-color: #b5ffea;
   width: 8vw;
   height: 10vh;
 }

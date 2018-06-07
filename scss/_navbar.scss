@@ -17,7 +17,7 @@
     @include sans-serif-font;
     &:focus,
     &:hover {
-      color: darken($brand-01, .1);
+      color: darken($brand-02, .1);
     }
   }
   .navbar-nav {
@@ -34,7 +34,7 @@
           color: $brand-01;
         }
         &.active {
-          color: $brand-01 !important;
+          color: $black !important;
           background-color: transparent;
           &:hover {
             background-color: transparent;
@@ -107,7 +107,7 @@
 .brand_name{
   font-size: 1em !important;
   line-height: 1em !important;
-  margin-left: 3.6%;
+  margin-left: 3vw;
   width: 35%;
   color: $black;
   z-index: 2500;
@@ -118,11 +118,41 @@
     }
 }
 
+.brand_sutitle{
+  position: relative;
+  padding-left: 1.3vw;
+  margin-top: 0.5vh;
+  @media screen and (max-width: 899px), (max-height: 550px)  {
+    position: relative;
+    width: 100vw;
+    margin-left: 0%;
+    right: 0px;
+    margin-top: 5vh;
+  }
+}
+
+.footer{
+  position: fixed;
+  bottom: 0vh;
+  left: 0vw;
+  width: 35%;
+  padding-bottom: 2vh;
+  padding-left: 3vw;
+  @media screen and (max-width: 899px), (max-height: 550px)  {
+    position: absolute;
+    width: 100vw;
+    margin-left: 0%;
+  }
+}
 .org_logo{
   position: relative;
   width: 5vw;
-  margin-left: 3.6%;
-  margin-top: 30vh;
+  margin-bottom: 2.5vh;
   padding-right: 0.5vw;
-  mix-blend-mode: multiply;
+  @media screen and (max-width: 899px), (max-height: 550px)  {
+    position: relative;
+    width: 5vw;
+    margin-left: 0%;
+    margin-top: 5vh;
+  }
 }
