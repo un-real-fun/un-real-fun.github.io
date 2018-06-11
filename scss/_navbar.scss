@@ -88,9 +88,13 @@
       z-index: 15;
       opacity: 1;
       transition: 0.5s;
-      overflow: scroll;
+      overflow: hidden;
       -ms-overflow-style: none;  // IE 10+
       overflow: -moz-scrollbars-none;  // Firefox
+      background: linear-gradient(90deg, $support-01 59%, $brand-01 69%);
+      background: -moz-linear-gradient(90deg, $support-01 59%, $brand-01 69%);
+      background: -webkit-linear-gradient(90deg, $support-01 59%, $brand-01 69%);
+      background: -o-linear-gradient(90deg, $support-01 59%, $brand-01 69%);
     }
   }
 
@@ -112,7 +116,7 @@
   color: $black;
   z-index: 2500;
   @media screen and (max-width: 899px), (max-height: 550px)  {
-      width: 100%;
+      width: auto;
       text-align: center;
       margin-left: 0%;
     }
@@ -131,7 +135,7 @@
   }
 }
 
-.footer{
+.banner_logo{
   position: fixed;
   bottom: 0vh;
   left: 0vw;
@@ -139,9 +143,7 @@
   padding-bottom: 2vh;
   padding-left: 3vw;
   @media screen and (max-width: 899px), (max-height: 550px)  {
-    position: absolute;
-    width: 100vw;
-    margin-left: 0%;
+    display: none;
   }
 }
 .org_logo{
@@ -151,8 +153,23 @@
   padding-right: 0.5vw;
   @media screen and (max-width: 899px), (max-height: 550px)  {
     position: relative;
-    width: 5vw;
+    width: 15vw;
     margin-left: 0%;
     margin-top: 5vh;
+  }
+}
+
+
+.footer_logo{
+  display: none;
+  @media screen and (max-width: 899px), (max-height: 550px)  {
+    display: block;
+    position: absolute;
+    background-color: $support-01;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 10vw;
+    padding-bottom: 10vh;
+    margin-top: 0%;
   }
 }

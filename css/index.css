@@ -92,9 +92,13 @@
     z-index: 15;
     opacity: 1;
     transition: 0.5s;
-    overflow: scroll;
+    overflow: hidden;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
+    background: linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
+    background: -moz-linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
+    background: -webkit-linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
+    background: -o-linear-gradient(90deg, #e1e9f7 59%, #ff547e 69%);
   }
 }
 
@@ -120,7 +124,7 @@
 }
 @media screen and (max-width: 899px), (max-height: 550px) {
   .brand_name {
-    width: 100%;
+    width: auto;
     text-align: center;
     margin-left: 0%;
   }
@@ -141,7 +145,7 @@
   }
 }
 
-.footer {
+.banner_logo {
   position: fixed;
   bottom: 0vh;
   left: 0vw;
@@ -150,10 +154,8 @@
   padding-left: 3vw;
 }
 @media screen and (max-width: 899px), (max-height: 550px) {
-  .footer {
-    position: absolute;
-    width: 100vw;
-    margin-left: 0%;
+  .banner_logo {
+    display: none;
   }
 }
 
@@ -166,9 +168,25 @@
 @media screen and (max-width: 899px), (max-height: 550px) {
   .org_logo {
     position: relative;
-    width: 5vw;
+    width: 15vw;
     margin-left: 0%;
     margin-top: 5vh;
+  }
+}
+
+.footer_logo {
+  display: none;
+}
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .footer_logo {
+    display: block;
+    position: absolute;
+    background-color: #e1e9f7;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 10vw;
+    padding-bottom: 10vh;
+    margin-top: 0%;
   }
 }
 
@@ -345,6 +363,7 @@ header.masthead p {
 @media screen and (max-width: 899px), (max-height: 550px) {
   #main {
     margin-top: -35vh;
+    z-index: 1000;
   }
 }
 
@@ -360,6 +379,11 @@ html, body {
   height: 100% !important;
   width: 100%;
   background-image: url("../img/bg.png");
+}
+@media screen and (max-width: 899px), (max-height: 550px) {
+  html, body {
+    width: 100%;
+  }
 }
 
 body {
@@ -566,19 +590,7 @@ span.fact {
 }
 @media screen and (max-width: 899px), (max-height: 550px) {
   .iceberg {
-    scale: 0.3;
-    padding-top: 0%;
-    margin-left: 0vw;
-    background: linear-gradient(90deg, #34ff07 65%, #FFF 79%);
-    background: -moz-linear-gradient(90deg, #34ff07 65%, #FFF 79%);
-    background: -webkit-linear-gradient(90deg, #34ff07 65%, #FFF 79%);
-    background: -o-linear-gradient(90deg, #34ff07 65%, #FFF 79%);
-    -ms-transform: scale(1, 0.3);
-    /* IE 9 */
-    -webkit-transform: scale(1, 0.3);
-    /* Safari */
-    transform: scale(1, 0.3);
-    overflow: hidden;
+    display: hidden;
   }
 }
 
@@ -598,6 +610,11 @@ span.fact {
   background-color: yellow;
   background-image: url("../img/24kgold.gif");
 }
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .box1 {
+    opacity: 0.3;
+  }
+}
 
 .box1_2 {
   position: absolute;
@@ -609,11 +626,21 @@ span.fact {
   background-image: url("../img/worker.gif");
   background-size: cover;
 }
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .box1_2 {
+    opacity: 0.3;
+  }
+}
 
 .box2, .box3 {
   position: absolute;
   opacity: 0.8;
   z-index: 12;
+}
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .box2, .box3 {
+    opacity: 0.3;
+  }
 }
 
 .box2 {
@@ -708,6 +735,11 @@ span.fact {
   z-index: 10;
   background-size: contain;
 }
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .gif_sharing, .gif_foodsharing, .gif_washing, .gif_worker, .gif_cook, .gif_harvest, .gif_hug, .gif_hug2, .gif_gift {
+    opacity: 0.3;
+  }
+}
 
 .gif_washing2, .gif_steal {
   position: absolute;
@@ -716,11 +748,10 @@ span.fact {
   z-index: 10;
   background-size: cover;
 }
-
-.ie:hover {
-  cursor: none;
-  background-image: url("../img/ie4.gif");
-  background-size: contain;
+@media screen and (max-width: 899px), (max-height: 550px) {
+  .gif_washing2, .gif_steal {
+    opacity: 0.3;
+  }
 }
 
 .x1 {

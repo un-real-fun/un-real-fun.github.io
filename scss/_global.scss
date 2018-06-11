@@ -3,6 +3,9 @@ html, body {
   height: 100% !important;
   width: 100%;
   background-image: url('../img/bg.png');
+  @media screen and (max-width: 899px), (max-height: 550px)  {
+      width: 100%;
+    }
 }
 
 body {
